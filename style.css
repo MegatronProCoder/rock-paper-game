@@ -1,0 +1,40 @@
+.selection{
+    font-size: 3rem;
+    transition: scale 300ms ease;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.selection:hover{
+    scale: 1.2;
+}
+
+.selections{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.container{
+    max-width: 500px;
+    margin-inline: auto;
+}
+.results{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    align-items:center;
+    justify-items: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.result-score{
+    font-size: 0.7em;
+}
+.result-selection{
+    opacity: 0.5;
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 1.4em;
+}
